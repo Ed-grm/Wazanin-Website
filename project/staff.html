@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Wazanin Recruitment Agency</title>
+    <meta name="description" content="Meet the dedicated team at Wazanin Recruitment Agency. Our experienced professionals are committed to connecting Ethiopian talent with Saudi employment opportunities.">
+    <meta name="keywords" content="Wazanin team, recruitment specialists, Ethiopian recruitment agency, staff directory">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Team - Wazanin Recruitment Agency">
+    <meta property="og:description" content="Meet our experienced team of recruitment professionals dedicated to your career success.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wazanin.com/staff">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #0f4c81;
+            --secondary: #f8c100;
+            --accent: #e74c3c;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --info: #17a2b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(15, 76, 129, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: #0c3d66;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(15, 76, 129, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+            color: var(--dark);
+            box-shadow: 0 4px 15px rgba(248, 193, 0, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: #e0a900;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(248, 193, 0, 0.4);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h1,
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+        
+        .section-title h1:after,
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 25px auto 0;
+            line-height: 1.8;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-top {
+            background: linear-gradient(135deg, var(--primary), #1a6db4);
+            padding: 10px 0;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: white;
+            transition: all 0.3s ease;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary);
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -1px;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+        
+        nav ul li a {
+            font-weight: 600;
+            color: var(--dark);
+            position: relative;
+            padding: 8px 0;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+        
+        nav ul li a:hover:after,
+        nav ul li a.active:after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, rgba(15, 76, 129, 0.9), rgba(26, 109, 180, 0.8)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+            position: relative;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(15, 76, 129, 0.1), rgba(248, 193, 0, 0.1));
+        }
+        
+        .page-header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .page-header p {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            line-height: 1.6;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .breadcrumb-nav a {
+            color: var(--primary);
+            transition: color 0.3s ease;
+        }
+        
+        .breadcrumb-nav a:hover {
+            color: var(--secondary);
+        }
+        
+        .breadcrumb-nav span {
+            color: #666;
+        }
+        
+        /* Staff Grid */
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            margin-top: 40px;
+        }
+        
+        .staff-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border-top: 4px solid var(--primary);
+            position: relative;
+        }
+        
+        .staff-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .staff-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(15, 76, 129, 0.02), rgba(248, 193, 0, 0.02));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .staff-card:hover::before {
+            opacity: 1;
+        }
+        
+        .staff-image {
+            height: 280px;
+            background: linear-gradient(135deg, var(--light), #e9ecef);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .staff-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .staff-card:hover .staff-image img {
+            transform: scale(1.05);
+        }
+        
+        .staff-image .placeholder-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+        
+        .staff-content {
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .staff-name {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .staff-position {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .staff-bio {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        .staff-contact {
+            border-top: 1px solid #e9ecef;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .contact-item i {
+            color: var(--primary);
+            width: 18px;
+            text-align: center;
+        }
+        
+        .contact-item a {
+            color: var(--primary);
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--secondary);
+        }
+        
+        .staff-specialties {
+            margin-top: 15px;
+        }
+        
+        .specialty-tag {
+            display: inline-block;
+            background: rgba(15, 76, 129, 0.1);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 3px 5px 3px 0;
+            font-weight: 500;
+        }
+        
+        /* Department Sections */
+        .department-section {
+            margin-bottom: 80px;
+        }
+        
+        .department-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .department-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .department-title p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark), #2c3e50);
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            border-radius: 2px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links li a {
+            color: #bbb;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+        }
+        
+        .footer-links li a i {
+            margin-right: 12px;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            width: 16px;
+        }
+        
+        .footer-links li a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px 0;
+            text-align: center;
+            color: #aaa;
+            font-size: 1rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .page-header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .staff-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 25px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                position: fixed;
+                top: 0;
+                right: -320px;
+                width: 300px;
+                height: 100vh;
+                background: white;
+                padding: 100px 40px 40px;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+                transition: right 0.4s ease;
+                z-index: 999;
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul li a {
+                font-size: 1.1rem;
+                padding: 12px 0;
+            }
+            
+            .mobile-toggle {
+                display: block;
+                z-index: 1001;
+            }
+            
+            .header-top-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .contact-info {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .page-header {
+                height: 50vh;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title h1,
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .staff-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .staff-content {
+                padding: 25px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+            
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .staff-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container header-top-content">
+                <div class="contact-info">
+                    <div><i class="fas fa-phone"></i> +251 912 345 678</div>
+                    <div><i class="fas fa-envelope"></i> info@wazanin.com</div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container main-header">
+            <div class="logo">
+                <a href="index.html"><h1>WAZA<span>NIN</span></h1></a>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="staff.html" class="active">Our Team</a></li>
+                    <li><a href="index.html#process">Process</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <h1>Meet Our Team</h1>
+            <p>Our dedicated professionals are committed to connecting Ethiopian talent with Saudi employment opportunities through expertise, integrity, and personalized service.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Our Team</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="section">
+        <div class="container">
+            <div class="department-section">
+                <div class="department-title">
+                    <h2>Leadership Team</h2>
+                    <p>Our experienced leaders guide Wazanin's mission to create successful employment partnerships between Ethiopia and Saudi Arabia.</p>
+                </div>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Mohammed Al-Hakim">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Mohammed Al-Hakim</h3>
+                            <div class="staff-position">Chief Executive Officer</div>
+                            <p class="staff-bio">With over 15 years of experience in international recruitment, Mohammed leads Wazanin's strategic vision and operations. He holds an MBA in International Business and has successfully placed over 3,000 professionals in Saudi Arabia.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Strategic Planning</span>
+                                <span class="specialty-tag">International Relations</span>
+                                <span class="specialty-tag">Business Development</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:mohammed.hakim@wazanin.com">mohammed.hakim@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 123 456</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Fatima Yusuf">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Fatima Yusuf</h3>
+                            <div class="staff-position">Operations Director</div>
+                            <p class="staff-bio">Fatima oversees all operational aspects of our recruitment process, ensuring quality and efficiency. With 12 years in HR and operations management, she has streamlined our processes to achieve a 95% placement success rate.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Operations Management</span>
+                                <span class="specialty-tag">Process Optimization</span>
+                                <span class="specialty-tag">Quality Assurance</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:fatima.yusuf@wazanin.com">fatima.yusuf@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 234 567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recruitment Team -->
+            <div class="department-section">
+                <div class="department-title">
+                    <h2>Recruitment Specialists</h2>
+                    <p>Our skilled recruitment team specializes in matching the right talent with the right opportunities across various industries.</p>
+                </div>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="project/duje.jpg" alt="Dujana Seid">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Dujana Seid</h3>
+                            <div class="staff-position">Sales Supervisor</div>
+                            <p class="staff-bio">Dujana leads our sales and client relations team with exceptional dedication. She has successfully managed relationships with over 150 Saudi employers and has been instrumental in expanding our healthcare and engineering recruitment divisions.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Healthcare Recruitment</span>
+                                <span class="specialty-tag">Client Relations</span>
+                                <span class="specialty-tag">Sales Management</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:dujana.seid@wazanin.com">dujana.seid@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 234 567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Ahmed Kassim">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Ahmed Kassim</h3>
+                            <div class="staff-position">Senior Recruitment Consultant</div>
+                            <p class="staff-bio">Ahmed specializes in technical and engineering recruitment with 8 years of experience. He has a deep understanding of the construction and manufacturing sectors in Saudi Arabia and has placed over 800 skilled professionals.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Engineering Recruitment</span>
+                                <span class="specialty-tag">Construction Sector</span>
+                                <span class="specialty-tag">Technical Assessment</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:ahmed.kassim@wazanin.com">ahmed.kassim@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 345 678</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Meron Tadesse">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Meron Tadesse</h3>
+                            <div class="staff-position">Healthcare Recruitment Specialist</div>
+                            <p class="staff-bio">Meron focuses exclusively on healthcare recruitment, working with hospitals and medical facilities across Saudi Arabia. As a former nurse, she brings unique insights to matching healthcare professionals with suitable positions.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Healthcare Recruitment</span>
+                                <span class="specialty-tag">Medical Licensing</span>
+                                <span class="specialty-tag">Nursing Placement</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:meron.tadesse@wazanin.com">meron.tadesse@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 456 789</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Team -->
+            <div class="department-section">
+                <div class="department-title">
+                    <h2>Support Services</h2>
+                    <p>Our support team ensures smooth processing of documentation, training, and ongoing assistance for all our candidates and clients.</p>
+                </div>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Yonas Bekele">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Yonas Bekele</h3>
+                            <div class="staff-position">Documentation Manager</div>
+                            <p class="staff-bio">Yonas manages all visa processing and documentation requirements. With extensive knowledge of Saudi immigration procedures, he ensures 99% success rate in visa approvals and maintains compliance with all legal requirements.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Visa Processing</span>
+                                <span class="specialty-tag">Legal Compliance</span>
+                                <span class="specialty-tag">Documentation</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:yonas.bekele@wazanin.com">yonas.bekele@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 567 890</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Hanan Mohammed">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Hanan Mohammed</h3>
+                            <div class="staff-position">Training Coordinator</div>
+                            <p class="staff-bio">Hanan develops and delivers our pre-departure training programs, including cultural orientation and job-specific skills development. She has trained over 2,000 candidates, ensuring their successful integration into Saudi workplaces.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Cultural Training</span>
+                                <span class="specialty-tag">Skills Development</span>
+                                <span class="specialty-tag">Language Support</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:hanan.mohammed@wazanin.com">hanan.mohammed@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 678 901</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Samuel Girma">
+                        </div>
+                        <div class="staff-content">
+                            <h3 class="staff-name">Samuel Girma</h3>
+                            <div class="staff-position">Client Support Manager</div>
+                            <p class="staff-bio">Samuel leads our post-placement support services, maintaining ongoing relationships with both candidates and employers. His proactive approach has resulted in a 92% employee retention rate and exceptional client satisfaction.</p>
+                            <div class="staff-specialties">
+                                <span class="specialty-tag">Client Support</span>
+                                <span class="specialty-tag">Relationship Management</span>
+                                <span class="specialty-tag">Conflict Resolution</span>
+                            </div>
+                            <div class="staff-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:samuel.girma@wazanin.com">samuel.girma@wazanin.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+251 911 789 012</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary), #1a6db4); color: white; text-align: center;">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Ready to Start Your Journey?</h2>
+                <p style="color: rgba(255, 255, 255, 0.9);">Our experienced team is here to guide you through every step of your international career journey. Contact us today to begin your transformation.</p>
+            </div>
+            <div style="margin-top: 40px;">
+                <a href="index.html#contact" class="btn btn-secondary" style="margin-right: 20px;">Contact Our Team</a>
+                <a href="index.html#services" class="btn" style="background: rgba(255, 255, 255, 0.2); color: white; border: 2px solid white;">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Wazanin</h3>
+                    <p>Connecting Ethiopian talent with Saudi employment opportunities through ethical recruitment practices and comprehensive support services. Your trusted partner in international career development.</p>
+                    <div class="social-icons" style="margin-top: 25px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="staff.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        <li><a href="index.html#process"><i class="fas fa-chevron-right"></i> Our Process</a></li>
+                        <li><a href="index.html#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Professional Recruitment</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Skilled Labor Placement</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Visa Processing</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pre-Departure Training</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Employer Partnership</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Post-Placement Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item" style="margin-bottom: 15px;">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bole Road, Addis Ababa, Ethiopia</span>
+                    </div>
+                    <div class="contact-item" style="margin-bottom: 15px;">
+                        <i class="fas fa-phone"></i>
+                        <span>+251 912 345 678</span>
+                    </div>
+                    <div class="contact-item" style="margin-bottom: 15px;">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@wazanin.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wazanin Recruitment Agency. All Rights Reserved. | Connecting Ethiopian Talent with Saudi Opportunities</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mainNav = document.getElementById('main-nav');
+        
+        mobileToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mainNav.contains(e.target) && !mobileToggle.contains(e.target)) {
+                mainNav.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate staff cards on scroll
+        function animateOnScroll() {
+            const cards = document.querySelectorAll('.staff-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        }
+        
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+    </script>
+</body>
+</html>

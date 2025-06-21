@@ -1,0 +1,39 @@
+# Jekyll Configuration for Wazanin Website
+title: Wazanin - Connecting Ethiopian Talent to Saudi Employers
+description: Connecting Ethiopian talent to Saudi employers through innovative recruitment solutions
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  staff:
+    output: true
+    permalink: /staff/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - dist
+  - .gitignore 
